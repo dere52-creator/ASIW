@@ -5,89 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body { font-family: "Courier New", monospace; background: #ffffff; color: #000000; margin: 0; padding: 0; font-size: 14px; }
-
-        /* Верхушка Aero */
-        .aero-header {
-            background: linear-gradient(180deg, rgba(0,150,255,0.9) 0%, rgba(0,50,150,0.9) 100%);
-            border-bottom: 2px solid #fff;
-            padding: 10px;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            text-shadow: 0 1px 2px #000;
-            box-shadow: 0 0 20px rgba(0,150,255,0.7);
-        }
+        .aero-header { background: linear-gradient(180deg, rgba(0,150,255,0.9) 0%, rgba(0,50,150,0.9) 100%); border-bottom: 2px solid #fff; padding: 10px; color: #fff; font-family: Arial, sans-serif; font-size: 18px; text-shadow: 0 1px 2px #000; box-shadow: 0 0 20px rgba(0,150,255,0.7); }
         .aero-header span { font-size: 12px; opacity: 0.8; }
-
         .content { padding: 15px; }
         h1 { font-size: 20px; border-bottom: 1px dashed #000; padding-bottom: 5px; }
-
-        /* Информационный блок */
-        .info-block {
-            border: 2px solid #000;
-            background: #f0f8ff;
-            padding: 15px;
-            margin: 15px 0;
-        }
-        .info-block h2 {
-            font-size: 18px;
-            color: #000;
-            margin: 0 0 10px 0;
-        }
-        .info-block p {
-            font-size: 14px;
-            line-height: 1.6;
-            margin: 8px 0;
-        }
-
-        /* Блок приложения */
-        .app {
-            border: 1px solid #000;
-            padding: 10px;
-            margin: 10px 0;
-            background: #f9f9f9;
-        }
-        .app img {
-            float: left;
-            margin-right: 10px;
-            width: 48px;
-            height: 48px;
-        }
-        .app a {
-            color: #0000ff;
-            text-decoration: none;
-            font-weight: bold;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-        }
+        .app { border: 1px solid #000; padding: 10px; margin: 10px 0; background: #f9f9f9; }
+        .app img { float: left; margin-right: 10px; width: 48px; height: 48px; }
+        .app a { color: #0000ff; text-decoration: none; font-weight: bold; font-family: Arial, sans-serif; font-size: 16px; }
         .app a:hover { text-decoration: underline; color: #000; }
         .app p { margin: 5px 0 0 0; font-size: 13px; }
-
-        /* Кнопка поддержки */
-        .support-btn {
-            display: inline-block;
-            background: #000;
-            color: #fff;
-            padding: 10px 20px;
-            margin-top: 15px;
-            text-decoration: none;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            border: 2px solid #000;
-        }
+        .support-btn { display: inline-block; background: #000; color: #fff; padding: 10px 20px; margin-top: 15px; text-decoration: none; font-family: Arial, sans-serif; font-size: 16px; border: 2px solid #000; }
         .support-btn:hover { background: #fff; color: #000; }
-
-        /* Подвал Aero (далеко внизу) */
-        .aero-footer {
-            background: linear-gradient(180deg, rgba(0,50,150,0.9) 0%, rgba(0,150,255,0.9) 100%);
-            border-top: 2px solid #fff;
-            padding: 5px;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            text-align: center;
-            margin-top: 400px;
-        }
+        .aero-footer { background: linear-gradient(180deg, rgba(0,50,150,0.9) 0%, rgba(0,150,255,0.9) 100%); border-top: 2px solid #fff; padding: 5px; color: #fff; font-family: Arial, sans-serif; font-size: 12px; text-align: center; margin-top: 400px; }
     </style>
 </head>
 <body>
@@ -97,17 +26,7 @@
     </div>
 
     <div class="content">
-
-        <!-- ИНФОРМАЦИЯ О ПРОЕКТЕ -->
-        <div class="info-block">
-            <h2>О проекте ASIW</h2>
-            <p><b>A Safe Internet World (ASIW)</b> — это сайт, где собраны только проверенные программы. Никаких вирусов, рекламы и «кряков».</p>
-            <p>Здесь ты найдёшь безопасный софт для Windows, Linux, Android и iOS. Все ссылки ведут на официальные сайты.</p>
-            <p><b>Проект полностью бесплатный.</b> Мы не берём денег и не показываем рекламу.</p>
-        </div>
-
-        <!-- ПРОГРАММЫ -->
-        <h1>Наши программы</h1>
+        <h1>Основные программы</h1>
 
         <div class="app">
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/VLC_Icon.svg" alt="VLC">
@@ -139,11 +58,21 @@
             <p>Бесплатный антивирус.</p>
         </div>
 
-        <!-- ДЛЯ БАБУШЕК -->
+        <h1>Дополнительно</h1>
+
+        <div class="app">
+            <a href="dev.html">Для разработчиков</a>
+            <p>Notepad++, 7-Zip, OBS Studio, Audacity и другие.</p>
+        </div>
+
+        <div class="app">
+            <a href="games.html">Игры</a>
+            <p>Terraria, DOSBox, Steam.</p>
+        </div>
+
         <h1>Для бабушек</h1>
         <p><a href="babushka.html">Инструкция: что делать, если звонят мошенники</a></p>
 
-        <!-- КНОПКА ПОДДЕРЖКИ -->
         <a class="support-btn" href="support.html">Служба поддержки</a>
     </div>
 
